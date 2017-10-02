@@ -1,6 +1,9 @@
 {
   "name": "react-on-rails-deployment",
   "private": true,
+  "scripts": {
+    "postinstall": "cd client && npm install"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",

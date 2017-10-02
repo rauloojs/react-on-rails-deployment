@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.3'
 
 gem 'webpacker', '~> 3.0'
 
+gem 'react_on_rails', '~> 9.0.1'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server

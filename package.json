@@ -2,7 +2,8 @@
   "name": "react-on-rails-deployment",
   "private": true,
   "scripts": {
-    "postinstall": "cd client && npm install"
+    "webpack:deploy": "webpack --config=webpack/webpack.config.js -p",
+    "heroku-postbuild": "yarn run webpack:deploy"
   },
   "dependencies": {
     "@rails/webpacker": "^3.0.1",

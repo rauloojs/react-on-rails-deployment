@@ -1,15 +1,29 @@
 {
   "name": "react-on-rails-deployment",
   "private": true,
+  "scripts": {
+    "lint": "eslint src 'app/javascript/**/*.js' 'app/javascript/**/*.jsx'",
+    "lint:fix": "eslint src 'app/javascript/**/*.js' 'app/javascript/**/*.jsx' --fix"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.0.1",
     "babel-preset-react": "^6.24.1",
+    "eslint-config-standard-jsx": "^4.0.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-on-rails": "^9.0.3"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "webpack-dev-server": "^2.9.1"
   }
 }
